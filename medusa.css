@@ -7,7 +7,9 @@
   border: 1px solid #e0e0e0;
   font-family: 'Open Sans', sans-serif;
   position: relative;
-  overflow: hidden;
+  overflow: visible; /* antes era hidden, esto rompía el flujo */
+  padding-top: 120px; /* para dejar espacio al fondo de medusa */
+  box-sizing: border-box;
 }
 
 /* Fondo Medusa */
@@ -94,3 +96,20 @@
   margin-top: 6px;
 }
 
+/* Ajustar la imagen de fondo dentro del flujo sin romperlo */
+.medusa-wrapper .medusa-bg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.1;
+  filter: contrast(130%) grayscale(30%);
+  height: 180px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Opcional: mejora visual del texto */
+.medusa-wrapper .medusa-body {
+  background: #f2f2f0;
+}
