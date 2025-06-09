@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=DM+Serif+Display&display=swap');
+
+body {
+  background: #f8f8f5;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Imagen de fondo */
+.medusa-bg {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.12;
+  filter: contrast(130%) grayscale(30%);
+  height: 270px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Cabecera */
+.medusa-header {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 30px 20px 20px;
+  background: rgba(254, 253, 251, 0.6);
+  border-bottom: 1px solid #bfa85c;
+  max-width: 400px;
+  margin: 40px auto 0;
+}
+
+.medusa-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 46px;
+  color: #bfa85c;
+  letter-spacing: 6px;
+}
+
+.medusa-subtitle {
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0b1c2c;
+  letter-spacing: 1.2px;
+  margin-top: 10px;
+}
+
+.medusa-subtitle span {
+  display: inline-block;
+  width: 30px;
+  height: 1px;
+  background: #bfa85c;
+  vertical-align: middle;
+  margin: 0 6px;
+}
+
+/* Texto de rol */
+.medusa-body {
+  position: relative;
+  z-index: 1;
+  background: rgba(240, 240, 236, 0.9);
+  padding: 20px;
+  margin: 25px;
+  font-size: 10px;
+  line-height: 1.8;
+  text-align: justify;
+  color: #2f3e4e;
+  border-radius: 4px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Pie */
+.medusa-footer {
+  background: #0b1c2c;
+  text-align: center;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto 40px;
+}
+
+.medusa-tags {
+  font-size: 10px;
+  color: #e6dfcc;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.medusa-copy {
+  font-size: 9px;
+  color: #999;
+  font-style: italic;
+  margin-top: 6px;
+}
