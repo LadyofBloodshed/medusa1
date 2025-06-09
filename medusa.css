@@ -15,14 +15,14 @@
 /* Fondo Medusa */
 .medusa-wrapper .medusa-bg {
   position: absolute;
-  top: -40px;
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  opacity: 0.12;
-  filter: contrast(130%) grayscale(30%);
-  height: 270px;
-  z-index: 0;
+  height: 180px;
+  opacity: 0.08;
+  filter: grayscale(100%) contrast(120%);
   pointer-events: none;
+  z-index: 0;
 }
 
 /* Cabecera */
@@ -58,6 +58,16 @@
   background: #bfa85c;
   vertical-align: middle;
   margin: 0 6px;
+}
+
+.medusa-wrapper .medusa-header {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 100px 20px 20px; /* antes era solo 30px, ahora deja espacio arriba */
+  background: rgba(254,253,251,0.6);
+  border-bottom: 1px solid #bfa85c;
+  overflow: hidden;
 }
 
 /* Texto de rol */
