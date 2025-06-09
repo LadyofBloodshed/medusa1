@@ -15,12 +15,12 @@
 /* Fondo Medusa */
 .medusa-wrapper .medusa-bg {
   position: absolute;
-  top: -50px;
+  top: -20px;
   left: 50%;
   transform: translateX(-50%);
-  opacity: 0.07;
-  filter: grayscale(100%) contrast(140%);
-  height: 260px;
+  height: 240px;
+  opacity: 0.08;
+  filter: grayscale(100%) contrast(130%);
   pointer-events: none;
   z-index: 0;
 }
@@ -30,7 +30,7 @@
   position: relative;
   z-index: 1;
   text-align: center;
-  padding: 30px 20px 20px;
+  padding: 50px 20px 30px; /* Espacio para colocar el título sobre la imagen */
   background: rgba(254,253,251,0.6);
   border-bottom: 1px solid #bfa85c;
   overflow: hidden;
