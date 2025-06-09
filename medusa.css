@@ -1,16 +1,16 @@
-/* Importar las Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=DM+Serif+Display&display=swap');
 
-/* Contenedor principal */
 .medusa-wrapper {
+  max-width: 400px;
+  margin: 40px auto;
   background: #f8f8f5;
+  border: 1px solid #e0e0e0;
   font-family: 'Open Sans', sans-serif;
   position: relative;
-  max-width: 400px;
-  margin: 40px auto 40px;
+  overflow: hidden;
 }
 
-/* Imagen de fondo */
+/* Fondo Medusa */
 .medusa-wrapper .medusa-bg {
   position: absolute;
   top: -40px;
@@ -23,13 +23,13 @@
   pointer-events: none;
 }
 
-/* CABECERA */
+/* Cabecera */
 .medusa-wrapper .medusa-header {
   position: relative;
   z-index: 1;
   text-align: center;
   padding: 30px 20px 20px;
-  background: rgba(254, 253, 251, 0.6);
+  background: rgba(254,253,251,0.6);
   border-bottom: 1px solid #bfa85c;
 }
 
@@ -58,11 +58,11 @@
   margin: 0 6px;
 }
 
-/* TEXTO DE ROL */
+/* Texto de rol */
 .medusa-wrapper .medusa-body {
   position: relative;
   z-index: 1;
-  background: rgba(240, 240, 236, 0.9);
+  background: rgba(240,240,236,0.9);
   padding: 20px;
   margin: 25px;
   font-size: 10px;
@@ -72,14 +72,14 @@
   border-radius: 4px;
 }
 
-/* PIE */
+/* Pie */
 .medusa-wrapper .medusa-footer {
   background: #0b1c2c;
   text-align: center;
   padding: 20px;
 }
 
-.medusa-wrapper .medusa-tags {
+.medusa-wrapper .medusa-footer .tags {
   font-size: 10px;
   color: #e6dfcc;
   font-weight: bold;
@@ -87,9 +87,10 @@
   letter-spacing: 0.5px;
 }
 
-.medusa-wrapper .medusa-copy {
+.medusa-wrapper .medusa-footer .copy {
   font-size: 9px;
   color: #999;
   font-style: italic;
   margin-top: 6px;
 }
+
