@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=DM+Serif+Display&display=swap');
+
+.medusa-box {
+  max-width: 400px;
+  margin: 20px auto;
+  background: #f8f8f5;
+  border: 1px solid #e0e0e0;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.medusa-fondo {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.12;
+  filter: contrast(130%) grayscale(30%);
+  height: 270px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.medusa-head {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 20px 15px 10px;
+  background: rgba(254,253,251,0.6);
+  border-bottom: 1px solid #bfa85c;
+}
+
+.medusa-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 40px;
+  color: #bfa85c;
+  letter-spacing: 4px;
+}
+
+.medusa-sub {
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0b1c2c;
+  letter-spacing: 1px;
+  margin-top: 6px;
+}
+
+.medusa-sub::before,
+.medusa-sub::after {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 1px;
+  background: #bfa85c;
+  vertical-align: middle;
+  margin: 0 4px;
+}
+
+.medusa-body {
+  position: relative;
+  z-index: 1;
+  background: rgba(240,240,236,0.9);
+  padding: 15px;
+  margin: 15px;
+  font-size: 10px;
+  line-height: 1.7;
+  text-align: justify;
+  color: #2f3e4e;
+  border-radius: 4px;
+}
+
+.medusa-foot {
+  background: #0b1c2c;
+  text-align: center;
+  padding: 16px 10px;
+}
+
+.medusa-datos {
+  font-size: 9px;
+  color: #e6dfcc;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.medusa-copy {
+  font-size: 8px;
+  color: #999;
+  font-style: italic;
+  margin-top: 5px;
+}
